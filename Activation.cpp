@@ -14,3 +14,6 @@ double ReLU::forward(double x) const {
 double Tanh::forward(double x) const {
     return std::tanh(x);
 }
+double LeakyReLU::forward(double x) const {
+    return (x > 0.0) ? x : 0.01 * x;
+}
