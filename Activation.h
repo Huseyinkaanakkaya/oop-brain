@@ -31,8 +31,12 @@ public:
     double forward(double x) const override;
 };
 
-// Tanh Sınıfı (Kılavuzda kesin istenen)
+// Tanh Sınıf
 class Tanh : public IActivation {
+public:
+    double forward(double x) const override;
+};
+class LeakyReLU : public IActivation {
 public:
     double forward(double x) const override;
 };
