@@ -53,7 +53,7 @@ g++ main.cpp Matrix.cpp DenseLayer.cpp Activation.cpp NeuralNetwork.cpp CSVReade
 | Baş Yazılım Mimarı | Semanur Şirin |
 | Matematik Motoru Geliştiricisi | Emine Acar |
 | Aktivasyon Fonksiyonu Geliştiricisi | Hüseyin Kaan Akkaya |
-| Katman Uygulama Uzmanı | Ahmet Gülden |
+| Katman Uygulama Uzmanı | Ahmet Yasin Gülden , Hatice Betül Altay|
 | Veri ve Dosya İşleme Uzmanı | Gamze Kılıç |
 | Hata Yönetimi ve Test Birimi | Sueda Acar |
 | Sistem Entegratörü ve Dokümantasyon | Semanur Şirin |
