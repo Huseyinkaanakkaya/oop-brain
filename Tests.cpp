@@ -22,12 +22,13 @@ void testInvalidIndex() {
 }
 
 void testNeuralNetwork() {
+    Sigmoid sigmoid;
     NeuralNetwork nn;
-    nn.addLayer(new DenseLayer(2, 3));
-    nn.addLayer(new DenseLayer(3, 1));
+    nn.addLayer(new DenseLayer(2, 3, &sigmoid));
+    nn.addLayer(new DenseLayer(3, 1, &sigmoid));
     Matrix input = Matrix::FromVector({1.0, 0.5});
     Matrix output = nn.predict(input);
-    cout << "[TEST BASARILI] NeuralNetwork predict calistiridi, "
+    cout << "[TEST BASARILI] NeuralNetwork predict calistirildi, "
          << "cikti boyutu: " << output.rows() << "x" << output.cols() << endl;
 }
 
