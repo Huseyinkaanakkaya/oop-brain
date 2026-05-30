@@ -3,6 +3,7 @@
 #include "DenseLayer.h"
 #include "Activation.h"
 #include "Tests.h"
+#include "CSVReader.h"
 using namespace std;
 
 int main() {
@@ -28,6 +29,22 @@ int main() {
     cout << "XOR(0,1) = " << nn.predict(input2)(0,0) << endl;
     cout << "XOR(1,0) = " << nn.predict(input3)(0,0) << endl;
     cout << "XOR(1,1) = " << nn.predict(input4)(0,0) << endl;
+    
+    cout << "\n--- CSV Okuma Demo ---" << endl;
+    
+    CSVReader reader("data.csv");
+    vector<vector<double>> data = reader.readCSV();
+    
+    if (!data.empty()) {
+        cout << "CSV dosyasi okundu: " << data.size() << " satir bulundu." << endl;
+        cout << "Ilk satir: ";
+        for (double val : data[0]) {
+            cout << val << " ";
+        }
+        cout << endl;
+    } else {
+        cout << "CSV dosyasi bos veya bulunamadi." << endl;
+    }
     
     return 0;
 }
