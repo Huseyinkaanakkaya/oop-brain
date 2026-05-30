@@ -27,8 +27,8 @@ Tests.cpp dosyasında hata yönetimi sınıflarının çalışıp çalışmadı�
 ## Çalıştırma
 
 ```bash
-g++ main.cpp Tests.cpp -o app
-./app
+g++ main.cpp Matrix.cpp DenseLayer.cpp Activation.cpp NeuralNetwork.cpp CSVReader.cpp Tests.cpp -o oop_brain
+./oop_brain
 
 
 ## Sınıf Yapısı
