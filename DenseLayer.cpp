@@ -10,5 +10,5 @@ DenseLayer::~DenseLayer() {
 Matrix DenseLayer::forward(const Matrix& input) {
     Matrix z = (weights * input) + bias;
     
-    return activation->forward(z);
+    return z.map([this](double x) { return activation->forward(x); });
 }
