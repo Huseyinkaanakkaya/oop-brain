@@ -56,4 +56,4 @@ g++ main.cpp Matrix.cpp DenseLayer.cpp Activation.cpp NeuralNetwork.cpp CSVReade
 | Katman Uygulama Uzmanı | Ahmet Gülden |
 | Veri ve Dosya İşleme Uzmanı | Gamze Kılıç |
 | Hata Yönetimi ve Test Birimi | Sueda Acar |
-| Sistem Entegratörü ve Dokümantasyon | |
+| Sistem Entegratörü ve Dokümantasyon | Semanur Şirin |
