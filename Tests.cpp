@@ -3,6 +3,7 @@
 #include "Tests.h"
 #include "NeuralNetwork.h"
 #include "DenseLayer.h"
+#include "Activation.h"
 using namespace std;
 
 void testDimensionMismatch() {
