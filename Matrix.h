@@ -8,20 +8,7 @@
 #include <random>     // Gelişmiş ağırlık ilklendirme (Xavier/He) matematiği için
 #include <string>
 #include <vector>     // Dış modüllerle (I/O, CSV okuma) iletişim kurabilmek için
-
-// ====================================================================================
-// ÖZEL HATA YÖNETİMİ SINIFI 
-// ====================================================================================
-// Standart hatalar yerine projenin kendi hata mekanizmasını kurguluyoruz.
-// Matris boyut uyuşmazlıklarında (örneğin toplama veya çarpma kuralları ihlal edildiğinde)
-// programın çökmesi yerine güvenli bir şekilde bu özel hata fırlatılır.
-class DimensionMismatchException : public std::logic_error
-{
-public:
-    explicit DimensionMismatchException(const std::string& message)
-        : std::logic_error(message) {}
-};
-
+#include "Exceptions.h"
 class Matrix; // İleri bildirim (Forward declaration) - Strateji sınıfları için gerekli
 
 // ====================================================================================
