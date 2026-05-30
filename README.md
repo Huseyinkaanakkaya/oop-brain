@@ -30,6 +30,7 @@ Tests.cpp dosyasında hata yönetimi sınıflarının çalışıp çalışmadı�
 g++ main.cpp Tests.cpp -o app
 ./app
 
+
 ## Sınıf Yapısı
 - **Matrix** — Matematik motoru, tüm lineer cebir işlemleri
 - **BaseLayer** — Soyut temel katman sınıfı
@@ -49,9 +50,10 @@ g++ main.cpp Tests.cpp -o app
 ## Grup Üyeleri ve Roller
 | Rol | Kişi |
 |-----|------|
-| Baş Yazılım Mimarı | |
-| Matematik Motoru Geliştiricisi | |
-| Katman Uygulama Uzmanı | |
-| Aktivasyon Fonksiyonu Geliştiricisi | |
+| Baş Yazılım Mimarı | Semanur Şirin |
+| Matematik Motoru Geliştiricisi | Emine Acar |
+| Aktivasyon Fonksiyonu Geliştiricisi | Hüseyin Kaan Akkaya |
+| Katman Uygulama Uzmanı | Ahmet Gülden |
+| Veri ve Dosya İşleme Uzmanı | Gamze Kılıç |
 | Hata Yönetimi ve Test Birimi | Sueda Acar |
 | Sistem Entegratörü ve Dokümantasyon | |
